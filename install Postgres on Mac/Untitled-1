@@ -1,0 +1,40 @@
+
+
+
+
+
+
+P:~ $ postgres
+postgres does not know where to find the server configuration file.
+You must specify the --config-file or -D invocation option or set the PGDATA environment variable.
+
+
+P:~ erickreinar$ postgres -D /usr/local/var/postgres
+LOG:  unrecognized configuration parameter "dynamic_shared_memory_type" in file "/usr/local/var/postgres/postgresql.conf" line 127
+FATAL:  configuration file "/usr/local/var/postgres/postgresql.conf" contains errors
+
+
+//vim into config file to alter and comment out problematic line
+$ vim /usr/local/var/postgres/postgresql.conf
+
+
+*************
+insert # (comment out "dynamic_shared_memory_type") 
+
+
+*************
+basecamev02sMBP:~ erickreinar$ postgres -D /usr/local/var/postgres
+FATAL:  "/usr/local/var/postgres" is not a valid data directory
+DETAIL:  File "/usr/local/var/postgres/PG_VERSION" does not contain valid data.
+HINT:  You might need to initdb.
+
+
+
+P:~ $ mkdir /usr/local/var/postgres/db
+P:~ $ initdb -D /usr/local/var/postgres/db
+The files belonging to this database system will be owned by user "erickreinar".
+This user must also own the server process.
+
+//Finallly, Start the database!!!
+
+P:~ $ postgres -D /usr/local/var/postgres/db
