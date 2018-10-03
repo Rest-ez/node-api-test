@@ -15,7 +15,7 @@
     "username": "postgres",
     "password": "CSV123",
     "database": "nodetodos",
-    "host": "127.0.0.1",
+    "host": "prodappdb.czfkqznkz3sd.us-east-1.rds.amazonaws.com",
     "port": 5432,
     "dialect": "postgres",
     "define": {
