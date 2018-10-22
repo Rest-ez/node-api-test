@@ -13,9 +13,9 @@
   },
   "test": {
     "username": "postgres",
-    "password": "csv123CSV",
+    "password": "password",
     "database": "nodetodos",
-    "host": "prodappdb.czfkqznkz3sd.us-east-1.rds.amazonaws.compostgresnode",
+    "host": "xxxxxx.us-east-1.rds.amazonaws.compostgresnode",
     "port": 5432,
     "dialect": "postgres",
     "define": {
