@@ -8,5 +8,7 @@ module.exports = (app) => {
 
   app.post('/api/todos', todosController.create);
   app.get('/api/todos', todosController.list);
+  app.post('/api/users', usersController.create);
+  app.get('/api/users', usersController.list);
   //app.post('/api/todos/:todoId/items', todoItemsController.create);
 };
