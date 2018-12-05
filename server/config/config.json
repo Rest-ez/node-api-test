@@ -1,33 +1,23 @@
 {
   "development": {
     "username": "postgres",
-    "password": null,
-    "database": "node-todos",
+    "password": "csv123CSV",
+    "database": "nodetodos",
     "host": "127.0.0.1",
-    "dialect": "postgres",
-    "define": {
-      "timestamps": false
-  },
-  "operatorsAliases": false
+    "dialect": "postgres"
   },
   "test": {
-    "username": "postgres",
-    "password": "password",
-    "database": "nodetodos",
-    "host": "xxxxxx.us-east-1.rds.amazonaws.compostgresnode",
-    "port": 5432,
-    "dialect": "postgres",
-    "define": {
-      "timestamps": false
-  },
-  "operatorsAliases": false
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   },
   "production": {
-    "username": "postgres",
+    "username": "root",
     "password": null,
     "database": "database_production",
     "host": "127.0.0.1",
-    "port": 5432,
-    "dialect": "postgres"
+    "dialect": "mysql"
   }
 }
