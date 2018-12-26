@@ -8,8 +8,8 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN npm install -D nodemon
-RUN npm install -g sequelize-cli
+RUN sudo npm install -g nodemon
+RUN sudo npm install -g sequelize-cli
 RUN npm install --save express
 RUN npm install --save body-parser
 RUN npm install --save morgan
