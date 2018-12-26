@@ -11,7 +11,6 @@ COPY package*.json ./
 RUN npm install
 RUN npm install -g sequelize-cli
 RUN npm install --save express
-RUN npm install --save express
 RUN npm install --save body-parser
 RUN npm install --save morgan
 
